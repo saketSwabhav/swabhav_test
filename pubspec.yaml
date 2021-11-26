@@ -18,7 +18,7 @@ publish_to: 'none' # Remove this line if you wish to publish to pub.dev
 version: 1.0.0+1
 
 environment:
-  sdk: ">=2.12.0 <3.0.0"
+  sdk: ">=2.7.0 <3.0.0"
 
 # Dependencies specify other packages that your package needs in order to work.
 # To automatically upgrade your package dependencies to the latest versions
@@ -49,6 +49,8 @@ dev_dependencies:
   path: ^1.8.0
   http: ^0.13.4
   shared_preferences: 2.0.9
+  syncfusion_flutter_gauges: ^18.2.44
+  percent_indicator: "^2.1.7+2"
   # file_picker: ^4.2.3
   # permission_handler: ^8.3.0
 
@@ -65,7 +67,25 @@ flutter:
 
   # To add assets to your application, add an assets section, like this:
   assets:
-    - assets/images/accent.png
+    - assets/images/accent.png 
+    - assets/images/welcomeback.png
+    - assets/images/coursedetails.png
+    - assets/images/google-meet.png
+    - assets/images/telegramicon.png
+    - assets/images/attendance.png
+    - assets/images/sessions.png
+    - assets/images/assignments.png
+    - assets/images/hourscompleted.png
+    - assets/images/weeklyrating.png
+    - assets/images/scorecardincrease.png
+    - assets/images/scorecarddecrease.png
+    - assets/images/tasklist.png
+    - assets/images/trophy.png
+    - assets/images/first.png
+    - assets/images/second.png
+    - assets/images/third.png
+    - assets/images/badge.png
+
     # - images/a_dot_burr.jpeg
   #   - images/a_dot_ham.jpeg
 

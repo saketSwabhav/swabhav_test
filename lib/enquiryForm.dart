@@ -12,7 +12,7 @@ import 'package:swabhav_test/loginScreen.dart';
 
 // ignore: camel_case_types
 class EnquiryForm extends StatefulWidget {
-  const EnquiryForm({Key? key}) : super(key: key);
+  const EnquiryForm({Key key}) : super(key: key);
 
   @override
   _EnquiryFormState createState() => _EnquiryFormState();
@@ -36,15 +36,15 @@ class _EnquiryFormState extends State<EnquiryForm> {
   List collegeData = [];
   List courses = [];
 
-  String? _mydegree;
+  String _mydegree;
 
-  String? _myspecialization;
+  String _myspecialization;
 
-  String? _mycollege;
+  String _mycollege;
 
-  String? _academicYear;
+  String _academicYear;
 
-  String? _mycourse; //edited line
+  String _mycourse; //edited line
 
   Future<String> getDegreeData() async {
     final String degreeUrl =
@@ -146,7 +146,7 @@ class _EnquiryFormState extends State<EnquiryForm> {
     // specializationData.add(json.encode(data));
   }
 
-  late File _file;
+  File _file;
 
   String selectedValue = "USA".toString();
   @override

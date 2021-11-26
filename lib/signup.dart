@@ -4,12 +4,11 @@ import 'package:flutter/material.dart';
 import 'package:http/http.dart' as http;
 import 'package:shared_preferences/shared_preferences.dart';
 import 'package:swabhav_test/loginScreen.dart';
-import 'package:swabhav_test/widgets/customPrimaryButton.dart';
 import 'package:swabhav_test/widgets/custom_checkbox.dart';
 import 'theme.dart';
 
 class RegisterPage extends StatefulWidget {
-  const RegisterPage({Key? key}) : super(key: key);
+  const RegisterPage({Key key}) : super(key: key);
 
   @override
   _RegisterPageState createState() => _RegisterPageState();

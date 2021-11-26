@@ -2,6 +2,7 @@ import 'dart:async';
 import 'package:flutter/material.dart';
 import 'package:shared_preferences/shared_preferences.dart';
 import 'package:swabhav_test/enquiryForm.dart';
+import 'package:swabhav_test/widgets/dashboard.dart';
 import 'loginScreen.dart';
 
 void main() {
@@ -9,7 +10,7 @@ void main() {
 }
 
 class MyApp extends StatelessWidget {
-  const MyApp({Key? key}) : super(key: key);
+  const MyApp({Key key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
@@ -25,7 +26,7 @@ class MyApp extends StatelessWidget {
 }
 
 class MyHomePage extends StatefulWidget {
-  const MyHomePage({Key? key}) : super(key: key);
+  const MyHomePage({Key key}) : super(key: key);
 
   @override
   _MyHomePageState createState() => _MyHomePageState();
@@ -44,7 +45,7 @@ class _MyHomePageState extends State<MyHomePage> {
     } else {
       Navigator.of(context).pushAndRemoveUntil(
           MaterialPageRoute(
-              builder: (BuildContext context) => const EnquiryForm()),
+              builder: (BuildContext context) => const Dashboard()),
           (Route<dynamic> route) => false);
     }
   }
